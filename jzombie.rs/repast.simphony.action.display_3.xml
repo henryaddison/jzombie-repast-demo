@@ -14,15 +14,25 @@
   <editedStyles>
     <entry>
       <string>jzombie.Zombie</string>
-      <string>jzombie.Zombie.style_0.xml</string>
+      <string>jzombie.Zombie.style_1.xml</string>
     </entry>
     <entry>
       <string>jzombie.Human</string>
-      <string>jzombie.Human.style_0.xml</string>
+      <string>jzombie.Human.style_1.xml</string>
     </entry>
   </editedStyles>
-  <netStyles/>
-  <editedNetStyles/>
+  <netStyles>
+    <entry>
+      <string>infection network</string>
+      <string>repast.simphony.visualization.editedStyle.EditedEdgeStyle2D</string>
+    </entry>
+  </netStyles>
+  <editedNetStyles>
+    <entry>
+      <string>infection network</string>
+      <string>infectionnetwork.style_0.xml</string>
+    </entry>
+  </editedNetStyles>
   <frequency>ON_MOVE</frequency>
   <schedParams>
     <start>1.0</start>
@@ -49,6 +59,11 @@
       <id>space</id>
       <attributes/>
       <type>CONTINUOUS_SPACE</type>
+    </repast.simphony.scenario.data.ProjectionData>
+    <repast.simphony.scenario.data.ProjectionData>
+      <id>infection network</id>
+      <attributes/>
+      <type>NETWORK</type>
     </repast.simphony.scenario.data.ProjectionData>
   </projections>
   <valueLayers/>
@@ -80,6 +95,13 @@
           </entry>
         </props>
       </repast.simphony.visualization.continuous.ContinuousProjectionDescriptor>
+    </entry>
+    <entry>
+      <string>infection network</string>
+      <repast.simphony.visualization.engine.DefaultProjectionDescriptor>
+        <proj reference="../../../../projections/repast.simphony.scenario.data.ProjectionData[2]"/>
+        <props/>
+      </repast.simphony.visualization.engine.DefaultProjectionDescriptor>
     </entry>
   </projectionDescriptors>
   <props/>
